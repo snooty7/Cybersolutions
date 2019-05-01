@@ -1,0 +1,44 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+// @codingStandardsIgnoreFile
+/**
+ * Product description template
+ *
+ * @var $block \Magento\Catalog\Block\Product\View\Description
+ */
+?>
+
+<div>
+    <label for="input_value">Test</label>
+    <input type="text" id="input_value" name="input_value"/>
+    <input type="submit" id="submit_value" class="action primary" title="Send Value" />
+</div>
+<script>
+require(['jquery', 'jquery/ui'], function($){ 
+
+     $(document).ready(function(){
+         $('#submit_value').click(function(){
+         var input_value = $('#input_value').val();
+             $.ajax({
+                 method: "POST",
+                 url: "<?php  echo $block->getUrl('example/index/index'); ?>",
+                 data: { q: input_value },
+                 dataType: "json"
+             })
+             .done(function( msg ) {
+
+               console.log(msg);
+	       $('html,body').animate({scrollTop:0},0);
+	       $('#input_value').val('');
+
+             });
+        });
+    });
+});
+</script>
+
+<?= /* @escapeNotVerified */ $this->helper('Magento\Catalog\Helper\Output')->productAttribute($block->getProduct(), $block->getProduct()->getDescription(), 'description') ?>
+
