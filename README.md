@@ -44,7 +44,7 @@ Uninstallation
 --------------
 1. Remove the extension files from your Magento installation
 2. You will also need to manually drop the table created by the extension with name `data_example`
-3. Next you would need to run `php bin/magento cache:clean` and `php bin/magento cache:clean` from your root magento folder
+3. Next you would need to run `php bin/magento setup:upgrade` and after that `php bin/magento cache:clean` from your root magento folder
 
 Developer
 ---------
