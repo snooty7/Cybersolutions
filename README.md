@@ -4,18 +4,22 @@ This was created as a simple pratice on creating a magento extension
 
 Facts
 -----
-- version: 1.0.0
-- extension key: Cybersolutions_Example
+- Version: 1.0.0
+- Extension key: Cybersolutions_Example
 - Exntensions is not added to Magento Connect
-- [direct download link](tba)
+- [Direct download link](tba)
 
 Description
 -----------
 This extension adds a simple input field to the product page, under the description tab.
-![Description Tab](tba)
+![Description Tab](https://github.com/snooty7/Cybersolutions/blob/master/2019-05-01.png)
+
+The module creates it's own database table, and extends the `catalog_product_view` layout to include a submit field.
+The submit field makes an Ajax call to the model controller to insert the input value into the extension db table.
+
 
 An already running demo of the extension is avalible at:
-Demo: [Hosted demo](https://dellia.co/test-product.html)
+- [Hosted demo](https://dellia.co/test-product.html)
 
 
 Requirements
@@ -42,11 +46,6 @@ Uninstallation
 2. You will also need to manually drop the table created by the extension with name `data_example`
 3. Next you would need to run `php bin/magento cache:clean` and `php bin/magento cache:clean` from your root magento folder
 
-Support
--------
-If you have any issues with this extension, open an issue on [GitHub](https://github.com/company/Company_ExampleExtension/issues).
-
-
 Developer
 ---------
 Miroslav Trankov  
@@ -56,4 +55,4 @@ Miroslav Trankov
 
 Copyright
 ---------
-(c) 2018 Cybersolutions
+(c) 2019 Cybersolutions
