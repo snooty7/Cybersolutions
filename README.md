@@ -7,7 +7,7 @@ Facts
 - Version: 1.0.0
 - Extension key: Cybersolutions_Example
 - Exntensions is not added to Magento Connect
-- [Direct download link](tba)
+- [Direct download link](https://github.com/snooty7/Cybersolutions/archive/v1.0.0.tar.gz)
 
 Description
 -----------
