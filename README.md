@@ -1,4 +1,4 @@
-Company Example Extension
+Cybersolutions Example Extension
 =====================
 This was created as a simple pratice on creating a magento extension
 
@@ -7,18 +7,21 @@ Facts
 - version: 1.0.0
 - extension key: Cybersolutions_Example
 - Exntensions is not added to Magento Connect
-- [direct download link](http://connect.magentocommerce.com/community/get/Company_ExampleExtension-0.1.0.tgz)
+- [direct download link](tba)
 
 Description
 -----------
 This extension adds a simple input field to the product page, under the description tab.
+![Description Tab](tba)
+
+An already running demo of the extension is avalible at:
+Demo: [Hosted demo](https://dellia.co/test-product.html)
 
 
 Requirements
 ------------
 - PHP >= 7.2.0
 - Mage_Core
-- ...
 
 Compatibility
 -------------
@@ -26,29 +29,29 @@ Compatibility
 
 Installation Instructions
 -------------------------
-1. Install the extension via Magento Connect with the key shown above or copy all the files into your document root.
-2. Clear the cache, logout from the admin panel and then login again.
-3. Configure and activate the extension under System - Configuration - Company - Example Extension.
-4. ...
+1. Navigate to your magento installation and go inside your `/app/code` folder  
+2. Run `git clone git@github.com:snooty7/Cybersolutions.git` to clone the repository into the app folder
+3. After that go back into your magento root directory and run `php bin/magento setup:upgrade` to install this extension
+4. Next while still in the root directory also run `php bin/magento cache:clean`
+5. The extension should now be installed.
+
 
 Uninstallation
 --------------
-1. Remove all extension files from your Magento installation
-2. ...
+1. Remove the extension files from your Magento installation
+2. You will also need to manually drop the table created by the extension with name `data_example`
+3. Next you would need to run `php bin/magento cache:clean` and `php bin/magento cache:clean` from your root magento folder
 
 Support
 -------
 If you have any issues with this extension, open an issue on [GitHub](https://github.com/company/Company_ExampleExtension/issues).
 
-Contribution
-------------
-Any contribution is highly appreciated. The best way to contribute code is to open a [pull request on GitHub](https://help.github.com/articles/using-pull-requests).
 
 Developer
 ---------
 Miroslav Trankov  
-[http://www.firstname-lastname.com](http://www.firstname-lastname.com)  
-[@FirstNameLastName](https://twitter.com/FirstNameLastName)
+[http://miroslav.trankov.eu](http://miroslav.trankov.eu/)  
+
 
 
 Copyright
