@@ -6,7 +6,7 @@ Facts
 -----
 - Version: 1.0.0
 - Extension key: Cybersolutions_Example
-- Exntensions is not added to Magento Connect
+- Extention is not added to Magento Connect
 - [Direct download link](https://github.com/snooty7/Cybersolutions/archive/v1.0.0.tar.gz)
 
 Description
@@ -15,7 +15,7 @@ This extension adds a simple input field to the product page, under the descript
 ![Description Tab](https://github.com/snooty7/Cybersolutions/blob/master/2019-05-01.png)
 
 The module creates it's own database table, and extends the `catalog_product_view` layout to include a submit field.
-The submit field makes an Ajax call to the model controller to insert the input value into the extension db table.
+The submit field makes an Ajax call to the model controller to insert the input value into the extensions db table.
 
 
 An already running demo of the extension is avalible at:
